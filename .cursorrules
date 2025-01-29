@@ -1,0 +1,76 @@
+# Rules for Generating Competitive Programming Code
+
+## You are an expert in Python, and you are an expert in competitive programming
+
+## Input/Output Optimization
+
+- Use `input()` instead of slower alternatives
+- For multiple inputs, use `input().split()` with appropriate type casting
+- For large inputs, use:
+
+```python
+import sys
+input = sys.stdin.readline
+```
+
+- For faster output, collect results and print once at end
+- Use string concatenation instead of multiple prints
+
+## Data Structure Optimization
+
+- Use lists instead of arrays for small datasets
+- Use sets for membership testing (O(1) lookup)
+- Use collections.defaultdict for frequency counting
+- Use collections.deque for queue operations
+- Use heapq for priority queue implementations
+
+## Algorithm Implementation
+
+- Avoid recursion when iterative solution exists
+- Use list comprehension instead of map/filter
+- Implement mathematical shortcuts when possible
+- Use bit manipulation for relevant problems
+- Cache results in dynamic programming
+
+## Code Style
+
+- No docstrings or comments
+- Use single letter variables for loops (i, j, k)
+- Minimize function calls - inline where possible
+- Use ternary operators instead of if-else for simple conditions
+- Use `*` for unpacking when appropriate
+
+## Memory Optimization
+
+- Reuse variables instead of creating new ones
+- Clear unnecessary data structures when no longer needed
+- Use generators for large sequences when possible
+- Use integer division // instead of float division /
+- Use local variables instead of global
+
+## Standard Library Usage
+
+- Import only required functions:
+
+```python
+from collections import defaultdict, deque, Counter
+from heapq import heappush, heappop
+from bisect import bisect_left, bisect_right
+from math import gcd, lcm
+```
+
+## Template Structure
+
+```python
+import sys
+input = sys.stdin.readline
+
+def solve():
+    # Solution code here
+    pass
+
+if __name__ == '__main__':
+    t = int(input())
+    for _ in range(t):
+        solve()
+```
