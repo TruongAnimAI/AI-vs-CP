@@ -2,6 +2,36 @@
 
 ## You are an expert in Python, and you are an expert in competitive programming
 
+## Documentation Requirements
+
+- Add a comprehensive docstring at the top of each solution containing:
+
+  ```python
+  """
+  Problem: [Problem Name]
+  -------------------
+  [Brief problem description]
+  [Key requirements/constraints]
+
+  Strategy:
+  --------
+  [Explanation of the approach/algorithm used]
+  [Why this approach was chosen]
+
+  Complexity:
+  ----------
+  Time: O(...) - [explanation]
+  Space: O(...) - [explanation]
+  """
+  ```
+
+- Include clear, concise inline comments explaining:
+  - Input reading logic
+  - Key data structure initialization
+  - Core algorithm steps
+  - Output calculation
+- Comments should explain "why" not just "what"
+
 ## Input/Output Optimization
 
 - Use `input()` instead of slower alternatives
@@ -34,7 +64,7 @@ input = sys.stdin.readline
 
 ## Code Style
 
-- No docstrings or comments
+- Use meaningful variable names for important data structures
 - Use single letter variables for loops (i, j, k)
 - Minimize function calls - inline where possible
 - Use ternary operators instead of if-else for simple conditions
@@ -62,15 +92,30 @@ from math import gcd, lcm
 ## Template Structure
 
 ```python
+"""
+Problem: [Problem Name]
+-------------------
+[Problem description]
+
+Strategy:
+--------
+[Solution approach]
+
+Complexity:
+----------
+Time: O(...)
+Space: O(...)
+"""
+
 import sys
 input = sys.stdin.readline
 
 def solve():
-    # Solution code here
+    # Solution code here with comments
     pass
 
 if __name__ == '__main__':
-    t = int(input())
+    t = int(input())  # number of test cases
     for _ in range(t):
         solve()
 ```
